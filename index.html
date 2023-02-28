@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/general.css">
+    <link rel="stylesheet" href="assets/styles/header-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+   <!-- <script src="assets/scripts/lang.js"></script> -->
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var changeLangButton = document.getElementById("changeLangButton");
+    function toggleChangeLang() {
+    
+        var changeLangPanel = document.getElementById("changeLangPanel");
+        if(changeLangPanel.style.visibility == 'visible'){
+            changeLangPanel.style.visibility = 'hidden';
+        }else{
+            changeLangPanel.style.visibility = 'visible';
+    
+        }
+    }
+    </script>
+    <header>
+
+        <!-- <img class="logo" src="assets/img/logo.png"> --> <h2 class="lucasof-h2">lucasof</h1>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+                <a href="#"><button class="panel-button">Panel</button></a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="social-navbar">
+        <a href="https://discord.gg/Nz3xxJ6Cpf" target="_blank"><img class="social-buttons" src="assets/img/logos/discord.png"></a>
+        <a href="https://twitter.com/lucazof" target="_blank"><img class="social-buttons" src="assets/img/logos/twitter.png"></a>
+        <a href="mailto: sup@lucasof.xyz" target="_blank"><img class="social-buttons" src="assets/img/logos/email.png"></a>
+    </div>
+
+    <div>
+        <a class="lang-button" id="changeLangButton" href="" onclick="toggleChangLang();">🌎</a>
+        <div class="change-lang" id="changeLangPanel">
+            <a href="#" style="color: rgb(126, 103, 255);">English</a>
+            <a href="#" style="color: white;">Português</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="home-intro">
+            <h2>👋 Hallo! I am <span style="font-style: italic;">lucas<span style="color: rgb(68, 0, 255);">of</span></span></h2>
+            <p>Front and Back End developer!<br>
+                Working with Unity, Minecraft Servers, <br>
+                Discord Bots and more!
+            </p>
+            <button class="learn-more-button">Learn more</button>
+
+            <button class="go-down-button">\/</button>
+        </div>
+
+        <div>
+            <h2 class="about-section">About</h2>
+        </div>
+    </main>
+
+</body>
+</html>
